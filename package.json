@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/YjjTT/TUI/issues"
   },
-  "homepage": "https://github.com/YjjTT/TUI#readme"
+  "homepage": "https://github.com/YjjTT/TUI#readme",
+  "dependencies": {
+    "vue": "^2.6.11"
+  }
 }
