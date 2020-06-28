@@ -5,7 +5,14 @@
 </template>
 <script>
     export default {
-        name: "button-group"
+        name: "button-group",
+        mounted() {
+            for (let node of this.$el.children) {
+                if (node.nodeName.toLowerCase() !== 'button') {
+                    console.warn(`g-button-group的子元素应该全是g-button, 但是你的写的是${node.nodeName.toLowerCase()}`)
+                }
+            }
+        }
     }
 </script>
 
