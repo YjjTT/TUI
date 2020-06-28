@@ -9,7 +9,13 @@
 <script>
     export default {
         name: "button",
-        props: ['icon', 'iconPosition']
+        props: {
+            icon: {},
+            iconPosition: {
+                type: String,
+                default: 'left'
+            }
+        }
     }
 </script>
 <style lang="scss">

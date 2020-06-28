@@ -12444,7 +12444,13 @@ exports.default = void 0;
 //
 var _default = {
   name: "button",
-  props: ['icon', 'iconPosition']
+  props: {
+    icon: {},
+    iconPosition: {
+      type: String,
+      default: 'left'
+    }
+  }
 };
 exports.default = _default;
         var $80be13 = exports.default || module.exports;
